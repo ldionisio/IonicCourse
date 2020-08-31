@@ -26,6 +26,8 @@ export class HomePage implements OnInit {
     private leaderservice: LeaderProvider,
     @Inject('BaseURL') private BaseURL) { }
 
+    
+
   ngOnInit() {
     this.dishservice.getFeaturedDish()
        .subscribe(dish => this.dish = dish,
