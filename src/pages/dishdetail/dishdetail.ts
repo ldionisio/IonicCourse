@@ -20,7 +20,7 @@ export class DishdetailPage {
   errMess: string;
   avgstars: string;
   numcomments: number;
-  favorite: boolean = false;
+  favorite: boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     @Inject('BaseURL') private BaseURL,
