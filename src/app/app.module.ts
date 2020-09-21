@@ -5,6 +5,7 @@ import { LocalNotifications, LocalNotificationsOriginal } from '@ionic-native/lo
 import { EmailComposer, EmailComposerOriginal } from '@ionic-native/email-composer';
 import { SocialSharing, SocialSharingOriginal } from '@ionic-native/social-sharing';
 import { Camera, CameraOriginal } from '@ionic-native/camera';
+import { Network, NetworkOriginal } from '@ionic-native/network';
 
 
 import { MyApp } from './app.component';
@@ -85,7 +86,8 @@ import { ActionSheetController } from 'ionic-angular';
     LocalNotificationsOriginal,
     EmailComposerOriginal,
     SocialSharingOriginal,
-    CameraOriginal
+    CameraOriginal,
+    NetworkOriginal
     
   ]
 })
