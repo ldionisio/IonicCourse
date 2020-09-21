@@ -4,6 +4,8 @@ import { Http, Response } from '@angular/http';
 import { Dish } from '../../shared/dish';
 import { Observable } from 'rxjs/Observable';
 import { DishProvider } from '../dish/dish';
+import { Storage } from '@ionic/storage';
+import 'rxjs/add/operator/map';
 
 /*
   Generated class for the FavoriteProvider provider.
@@ -17,10 +19,18 @@ import { DishProvider } from '../dish/dish';
 
     favorites: Array<any>;
   
-    constructor(public http: Http,
-      private dishservice: DishProvider) {
+    constructor(public http: HttpClient,
+      private dishservice: DishProvider,
+      private storage: Storage) {
       console.log('Hello FavoriteProvider Provider');
-      this.favorites = [];
+
+      this.storage.get('favorites').then(favorites => {
+        if(favorites){
+          this.favorites = favorites;
+        } else {
+          this.favorites = [];
+        }
+      });
       
     }
     addFavorite(id: number): boolean {
