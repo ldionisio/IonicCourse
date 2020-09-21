@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { LocalNotifications, LocalNotificationsOriginal } from '@ionic-native/local-notifications';
 import { EmailComposer, EmailComposerOriginal } from '@ionic-native/email-composer';
 import { SocialSharing, SocialSharingOriginal } from '@ionic-native/social-sharing';
+import { Camera, CameraOriginal } from '@ionic-native/camera';
 
 
 import { MyApp } from './app.component';
@@ -16,6 +17,7 @@ import { FavoritesPage } from '../pages/favorites/favorites';
 import { ReservationPage } from '../pages/reservation/reservation';
 import { CommentPage } from '../pages/comment/comment';
 import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -44,7 +46,8 @@ import { ActionSheetController } from 'ionic-angular';
     FavoritesPage,
     ReservationPage,
     CommentPage,
-    LoginPage
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -64,7 +67,8 @@ import { ActionSheetController } from 'ionic-angular';
     FavoritesPage,
     ReservationPage,
     CommentPage,
-    LoginPage
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
@@ -80,7 +84,8 @@ import { ActionSheetController } from 'ionic-angular';
     ActionSheetController,
     LocalNotificationsOriginal,
     EmailComposerOriginal,
-    SocialSharingOriginal
+    SocialSharingOriginal,
+    CameraOriginal
     
   ]
 })
