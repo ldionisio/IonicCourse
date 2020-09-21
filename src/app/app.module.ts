@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { LocalNotifications, LocalNotificationsOriginal } from '@ionic-native/local-notifications';
+import { EmailComposer, EmailComposerOriginal } from '@ionic-native/email-composer';
+import { SocialSharing, SocialSharingOriginal } from '@ionic-native/social-sharing';
+
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -75,7 +78,9 @@ import { ActionSheetController } from 'ionic-angular';
     ProcessHttpmsgProvider,
     FavoriteProvider,
     ActionSheetController,
-    LocalNotificationsOriginal
+    LocalNotificationsOriginal,
+    EmailComposerOriginal,
+    SocialSharingOriginal
     
   ]
 })
