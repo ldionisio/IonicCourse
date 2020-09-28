@@ -20,6 +20,7 @@
     "@angular/http": "^7.2.16",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/call-number": "^5.28.0",
     "@ionic-native/camera": "^5.28.0",
     "@ionic-native/core": "4.20.0",
     "@ionic-native/email-composer": "^5.28.0",
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.4",
+    "call-number": "^1.0.1",
     "cordova-plugin-camera": "^5.0.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-email": "^1.2.7",
@@ -72,10 +74,9 @@
         "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
         "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
       },
-      "cordova-plugin-camera": {
-        "ANDROID_SUPPORT_V4_VERSION": "27.+"
-      },
-      "cordova-plugin-network-information": {}
+      "cordova-plugin-camera": {},
+      "cordova-plugin-network-information": {},
+      "mx.ferreyra.callnumber": {}
     },
     "platforms": [
       "android",

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EmailComposer, EmailComposerOriginal } from '@ionic-native/email-composer';
+import { CallNumber, CallNumberOriginal } from '@ionic-native/call-number';
 
 
 /**
@@ -18,7 +19,8 @@ import { EmailComposer, EmailComposerOriginal } from '@ionic-native/email-compos
 export class ContactPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private EmailComposer: EmailComposerOriginal) {
+    private EmailComposer: EmailComposerOriginal,
+    private callNumber: CallNumberOriginal) {
   }
 
   ionViewDidLoad() {
@@ -35,6 +37,12 @@ export class ContactPage {
 
     // Send a text message using default options
     this.EmailComposer.open(email);
+  }
+
+  callRestaurant(){
+    this.callNumber.callNumber("00185212345678", true)
+    .then(res => console.log('Launched dialer!', res))
+    .catch(err => console.log('Error launching dialer', err));
   }
 
 }

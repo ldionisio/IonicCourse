@@ -6,6 +6,7 @@ import { EmailComposer, EmailComposerOriginal } from '@ionic-native/email-compos
 import { SocialSharing, SocialSharingOriginal } from '@ionic-native/social-sharing';
 import { Camera, CameraOriginal } from '@ionic-native/camera';
 import { Network, NetworkOriginal } from '@ionic-native/network';
+import { CallNumber, CallNumberOriginal } from '@ionic-native/call-number';
 
 
 import { MyApp } from './app.component';
@@ -87,7 +88,8 @@ import { ActionSheetController } from 'ionic-angular';
     EmailComposerOriginal,
     SocialSharingOriginal,
     CameraOriginal,
-    NetworkOriginal
+    NetworkOriginal,
+    CallNumberOriginal
     
   ]
 })
